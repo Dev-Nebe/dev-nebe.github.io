@@ -21,7 +21,7 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event)=> {
-  console.log(`Fetch request has been intercepted for ${event.request.url}`);
+  // console.log(`Fetch request has been intercepted for ${event.request.url}`);
   event.respondWith(
     caches.match(event.request)
       .then(cachedResponse => {
@@ -31,6 +31,5 @@ self.addEventListener('fetch', (event)=> {
           return fetch(event.request);
         }
     })
-      .catch(err => console.log(err))
   );
 });
