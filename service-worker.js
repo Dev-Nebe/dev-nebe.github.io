@@ -2,6 +2,7 @@ const cacheName = 'cache-v1';
 
 let precacheResources = [
   '/',
+  '/index.html',
   '/asets/css/main.css',
   '/js/main.js'
 ];
@@ -24,11 +25,11 @@ self.addEventListener('fetch', (event)=> {
   event.respondWith(
     caches.match(event.request)
       .then(cachedResponse => {
-      if (cachedResponse) {
-        return cachedResponse;
-      } else {
-        return fetch(event.request);
-      }
+        if (cachedResponse) {
+          return cachedResponse;
+        } else {
+          return fetch(event.request);
+        }
     })
       .catch(err => console.log(err));
   );
