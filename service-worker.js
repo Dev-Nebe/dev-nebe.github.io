@@ -12,7 +12,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheName)
     .then(cache => cache.addAll(precacheResources))
-    .catch(err => console.log(err));
+    .catch(err => console.log(err))
   );
 });
 
