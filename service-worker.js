@@ -9,9 +9,7 @@ let precacheResources = [
 self.addEventListener('install', (event) => {
   console.log('Service worker is being installed');
   event.waitUntil(
-    caches.open(cacheName)
-    .then(cache => cache.addAll(precacheResources))
-    .catch(err => console.log(err))
+    caches.open(cacheName).then(cache => cache.addAll(precacheResources))
   );
 });
 
