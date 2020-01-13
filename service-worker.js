@@ -4,7 +4,7 @@ let precacheResources = [
   '/',
   'index.html',
   'assets/css/main.css',
-  'js/main.js'
+  'assets/js/main.js'
 ];
 
 self.addEventListener('install', (event) => {
