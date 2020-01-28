@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 
 /*
 	Strata by HTML5 UP
@@ -31,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-color: rgb(25, 35, 36) !important;
 }
 
 ol, ul {
@@ -117,7 +119,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #f86713 !important;
 			text-decoration: none;
 		}
 
@@ -131,10 +133,13 @@ input, select, textarea {
 	}
 
 	p {
+		font-family: 'Open Sans', sans-serif;
 		margin: 0 0 2em 0;
+		color: white;
+		font-size: 1rem;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		color: #787878;
 		font-weight: 400;
 		line-height: 1em;
@@ -154,6 +159,8 @@ input, select, textarea {
 	h2 {
 		font-size: 1.5em;
 		line-height: 1.5em;
+		color: #49bf9d;
+		margin-bottom: 1rem;
 	}
 
 	h3 {
@@ -2593,7 +2600,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/rockyMountains.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
